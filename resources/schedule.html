@@ -1,0 +1,1508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" class="rotzkgfeh idc0_350 TridactylThemeDefault"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Расписание</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial;
+        font-size: small;
+    }
+
+    table.main {
+        width: 50em;
+        border: 0px;
+    }
+
+    @media screen and (min-width:685px) {
+        body {
+            margin: 0px 1.5em;
+        }
+    }
+
+    @media screen and (max-width:685px) {
+        table.main {
+            width: 100%;
+        }
+    }
+
+    h1 {
+        margin: 1ex 0px 1ex 0px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    td {
+        font-size: small;
+    }
+
+    td.dayname {
+        border: 2px solid #000;
+        background-color: #ccc;
+        font-size: 150%;
+    }
+
+    td.c {
+        text-align: center;
+    }
+
+    td.r {
+        text-align: right;
+    }
+
+    td.b {
+        font-weight: bold;
+    }
+
+    table.schedule {
+        margin-top: 2em;
+        border: 2px solid #000;
+        border-collapse: collapse;
+    }
+
+    table.schedule td,
+    table.schedule th {
+        border: 1px solid #000;
+        padding: 0.2ex;
+        text-align: center;
+    }
+
+    table.schedule th {
+        border-width: 1px 2px;
+        font-size: 120%;
+        padding: 0.5ex;
+    }
+
+    table.schedule th.dayname {
+        border: 2px solid #000;
+        background-color: #ccc;
+        font-size: 150%;
+    }
+
+    table.schedule tr.lowline {
+        border-bottom: 2px solid #000;
+    }
+
+    tr.oddrow td,
+    tr.oddrow th {
+        background: #EFF;
+    }
+
+    table.schedule td.l {
+        text-align: left;
+    }
+
+    td.large {
+        font-size: 16px;
+    }
+
+    div.nb {
+        margin: 0.5ex;
+        padding: 1px;
+        border: 2px solid #d9534f;
+        background-color: #FCC;
+        padding: 0.5ex;
+        text-align: justify;
+    }
+    </style>
+<style type="text/css">@media print {
+        .TridactylStatusIndicator {
+            display: none !important;
+        }
+    }</style></head>
+
+<body>
+    <table class="main" cellspacing="0" cellpadding="0">
+      <tbody><tr><td>&nbsp;</td></tr>
+                <tr>
+            <td align="center">
+                <h1>РАСПИСАНИЕ<br>занятий, зачётов, экзаменов и консультаций</h1>
+                                <form method="get">
+                    <input type="hidden" name="id_group" value="19040">
+                    <input type="hidden" name="control_only" value="1">
+                    <input type="hidden" name="date1" value="2023-09-01">                    <input type="hidden" name="date2" value="2023-12-31">                    <input type="submit" value="Вывести только зачёты, консультации и экзамены">
+                </form>                <hr>
+                <form method="get">
+                    <input type="hidden" name="id_group" value="19040">
+                                        <label for="date1">Даты: с</label>
+                    <input type="date" name="date1" id="date1" value="2023-09-01">
+                    <label for="date2">по</label>
+                    <input type="date" name="date2" id="date2" value="2023-12-31">
+                    <input type="submit" value="Фильтровать">
+                </form>
+                <form method="get">
+                    или<br>
+                    <input type="hidden" name="id_group" value="19040">
+                    <input type="hidden" name="date1" value="2023-12-09">
+                    <input type="hidden" name="date2" value="2023-12-15">
+                    <input type="submit" value="Вывести расписание на ближайшие 7 дней">
+                </form><br>&nbsp;
+                                <table cellspacing="0" cellpadding="0" style="width: 50em">
+                    <tbody><tr>
+                        <td>Группа</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="b">1об-СОЦ-1/23</td>
+                        <td class="r">срок обучения <b>4                                года</b></td>
+                    </tr>
+                    <tr>
+                        <td>"1" курс, факультет</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="b">институт истории и социальных наук</td>
+                        <td class="r">форма обучения <b>очная</b></td>
+                    </tr>
+                    <tr>
+                        <td>Направление</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="b" colspan="2">39.03.01 Социология</td>
+                    </tr>
+                    <tr>
+                        <td nowrap="nowrap">Направленность (профиль)</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="b" colspan="2">Социология</td>
+                    </tr>
+                    <tr>
+                        <td>Квалификация</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="b" colspan="2">бакалавр</td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="schedule">
+                    <tbody><tr>
+                        <th width="20%" class="b c" rowspan="2">Время</th>
+                                                <th width="70%" class="b c" colspan="2">Дисциплина, вид занятия, преподаватель и место
+                            проведения занятия</th>
+                    </tr>
+                                        <tr>
+                        <th width="225" class="b c">1&nbsp;подгруппа</th>
+                        <th width="225" class="b c">2&nbsp;подгруппа</th>
+                    </tr>
+                    
+                    </tbody><tbody>
+                        					<tr><th class="dayname" colspan="3">2.09.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">4.09.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">5.09.2023, вторник</th></tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(5.09—3.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=181" target="_blank">проф. Воронцов Алексей Васильевич</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(5.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">6.09.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">7.09.2023, четверг</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(7.09—5.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Философия</strong> [практ]<br>(7.09—14.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11125" target="_blank">доц. Яковлев Алексей Викторович</a>, ауд. 219, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong>Иностранный язык (английский)</strong> [лекц]<br>(7.09—28.09) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">8.09.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">9.09.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">11.09.2023, понедельник</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(11.09—23.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">12.09.2023, вторник</th></tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(12.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=181" target="_blank">проф. Воронцов Алексей Васильевич</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">13.09.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">14.09.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Философия</strong> [практ]<br>(7.09—14.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11125" target="_blank">доц. Яковлев Алексей Викторович</a>, ауд. 219, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong>Иностранный язык (английский)</strong> [лекц]<br>(7.09—28.09) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">15.09.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(15.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">16.09.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">18.09.2023, понедельник</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">19.09.2023, вторник</th></tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(5.09—3.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=181" target="_blank">проф. Воронцов Алексей Васильевич</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(19.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">20.09.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">21.09.2023, четверг</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(7.09—5.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong>Иностранный язык (английский)</strong> [лекц]<br>(7.09—28.09) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">22.09.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(8.09—22.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">23.09.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">25.09.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(11.09—23.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">26.09.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(26.09) <a href="https://atlas.herzen.spb.ru/teacher.php?id=181" target="_blank">проф. Воронцов Алексей Васильевич</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">27.09.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">28.09.2023, четверг</th></tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong>Иностранный язык (английский)</strong> [лекц]<br>(7.09—28.09) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">30.09.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">2.10.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">3.10.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(5.09—3.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=181" target="_blank">проф. Воронцов Алексей Васильевич</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(3.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">4.10.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">5.10.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(7.09—5.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">6.10.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(6.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(6.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">7.10.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">9.10.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(11.09—23.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">10.10.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(10.10—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">11.10.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">12.10.2023, четверг</th></tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td><strong>Факультатив: Основы использования информационно-библиотечных ресурсов и сервисов</strong> [лаб]<br>(12.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=7128" target="_blank"> Морозова Светлана Александровна</a>, ауд. 11, корпус 5 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">13.10.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">14.10.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">16.10.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">17.10.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(17.10—12.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(10.10—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">18.10.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(6.09—18.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">19.10.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">20.10.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(20.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [лекц]<br>(20.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 18, корпус 6 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">21.10.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">23.10.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(11.09—23.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">24.10.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(10.10—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">25.10.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td>—</td>
+						<td><strong>Факультатив: Основы использования информационно-библиотечных ресурсов и сервисов</strong> [лаб]<br>(25.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=7128" target="_blank"> Морозова Светлана Александровна</a>, ауд. 11, корпус 5 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">27.10.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(27.10) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">28.10.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">30.10.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">31.10.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(17.10—12.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(10.10—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">1.11.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">2.11.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">3.11.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">6.11.2023, понедельник</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [лекц]<br>(11.09—6.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">7.11.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [лекц]<br>(10.10—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(5.09—7.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">8.11.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">10.11.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">11.11.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">13.11.2023, понедельник</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(13.11—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">14.11.2023, вторник</th></tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(17.10—12.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(14.11—5.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11480" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">15.11.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">16.11.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(16.11—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">17.11.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">18.11.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Философия</strong> [лекц]<br>(9.09—18.11) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">20.11.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(13.11—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">21.11.2023, вторник</th></tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(14.11—5.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11480" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">22.11.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">24.11.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(20.10—24.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">25.11.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">27.11.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(13.11—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">28.11.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(17.10—12.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(14.11—5.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11480" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [практ]<br>(28.11) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">29.11.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">30.11.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(16.11—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">1.12.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">2.12.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [лекц]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>16:50 — 18:20</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [практ]<br>(2.09—2.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">4.12.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(13.11—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [практ]<br>(4.09—4.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 14:30</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13361" target="_blank">Логика</a></strong> [зачёт, в письменной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 307, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">5.12.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(14.11—5.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11480" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">6.12.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">8.12.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(8.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 307, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">9.12.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Физическая культура и спорт</strong> [лекц]<br>(16.09—9.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 21:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=34760" target="_blank">Социология профессий</a></strong> [зачёт, в устной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=2074" target="_blank">доц. Мартьянова Наталья Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">11.12.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">12.12.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Основы социологии</strong> [практ]<br>(17.10—12.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11734" target="_blank">проф. Васильева Елена Александровна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">13.12.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">14.12.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(16.11—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">15.12.2023, пятница</th></tr>
+					<tr class="lowline">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(15.12—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>18:30 — 20:00</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—15.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr><th class="dayname" colspan="3">16.12.2023, суббота</th></tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Русский язык и культура речи</strong> [лекц]<br>(9.09—16.12) Видеолекция* дистанционное обучение                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">18.12.2023, понедельник</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">20.12.2023, среда</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=16787" target="_blank">Физическая культура и спорт (элективная дисциплина)</a></strong> [практ]<br>(6.09—20.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1087" target="_blank">проф. Шелкова Людмила Николаевна</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">22.12.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>8:00 — 9:30</th>
+						<td>—</td>
+						<td><strong>Иностранный язык (французский)</strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1411" target="_blank">доц. Курбатова Светлана Георгиевна</a>, ауд. 317, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(3.11—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [практ]<br>(15.12—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 305, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 18:20</th>
+						<td><strong>Иностранный язык (русский язык как иностранный)</strong> [лаб]<br>(10.11—22.12 для иностранных студентов) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11396" target="_blank">ст. преп. Кротова Светлана Анатольевна</a>, ауд. 318, корпус 20 (Мойка 48)                          </td>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=7422" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(22.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3530" target="_blank">ст. преп. Москалева Анна Александровна</a>, ауд. 314, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">23.12.2023, суббота</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 15:40</th>
+						<td colspan="2"><strong>Факультатив: Основы российской государственности</strong> [зачёт, в устной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=4593" target="_blank">ст. преп. Пашковский Евгений Александрович</a>, ауд. 311, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">25.12.2023, понедельник</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [практ]<br>(11.12—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 15:00</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [лекц]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [практ]<br>(4.09—25.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 312, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">26.12.2023, вторник</th></tr>
+					<tr class="lowline">
+						<th>13:30 — 14:30</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=35076" target="_blank">Русский язык и культура речи</a></strong> [зачёт, в письменной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=11708" target="_blank">асс. Семенова Александра Александровна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">27.12.2023, среда</th></tr>
+					<tr class="lowline oddrow">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [лекц]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=26905" target="_blank">Психология</a></strong> [практ]<br>(8.11—27.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1657" target="_blank">доц. Туманова Елена Николаевна</a>, ауд. 304, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>13:30 — 14:30</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=13041" target="_blank">Физическая культура и спорт</a></strong> [зачёт, в устной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=7557" target="_blank">ст. преп. Головко Андрей Александрович</a>, ауд.1 - спортивный зал                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">28.12.2023, четверг</th></tr>
+					<tr class="lowline">
+						<th>9:40 — 11:10</th>
+						<td colspan="2"><strong>Высшая математика</strong> [лекц]<br>(16.11—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=3629" target="_blank">доц. Певзнер Игорь Михайлович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline oddrow">
+						<th>11:20 — 12:50</th>
+						<td colspan="2"><strong>Высшая математика</strong> [практ]<br>(7.09—28.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=11065" target="_blank">асс. Гнутов Федор Александрович</a>, ауд. 213, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr class="lowline">
+						<th>13:30 — 14:30</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=11226" target="_blank">Введение в специальность</a></strong> [зачёт, в письменной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=1766" target="_blank">проф. Малявин Сергей Николаевич</a>, ауд. 219, корпус 20 (Мойка 48)                          </td>
+					</tr>
+					<tr><th class="dayname" colspan="3">29.12.2023, пятница</th></tr>
+					<tr class="lowline oddrow">
+						<th>15:10 — 16:40</th>
+						<td><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=3244" target="_blank">Иностранный язык (английский)</a></strong> [лаб]<br>(6.10—29.12) <a href="https://atlas.herzen.spb.ru/teacher.php?id=1826" target="_blank">ст. преп. Кулиш Галина Николаевна</a>, ауд. 310, корпус 20 (Мойка 48)                          </td>
+						<td>—</td>
+					</tr>
+					<tr class="lowline">
+						<th>16:50 — 17:50</th>
+						<td colspan="2"><strong><a href="https://moodle.herzen.spb.ru/course/view.php?id=22740" target="_blank">Философия</a></strong> [зч/оц, в письменной форме]<br><a href="https://atlas.herzen.spb.ru/teacher.php?id=937" target="_blank">доц. Спивак Веда Игоревна</a>, ауд. 313, корпус 20 (Мойка 48)                          </td>
+					</tr>
+                    </tbody>
+                </table>&nbsp;<br>
+                * С материалами видеолекции вы можете ознакомиться в 
+электронном учебном курсе с практическими занятиями и заданиями для 
+самостоятельной работы по этой же дисциплине.<br>            </td>
+        </tr>
+                    </tbody></table><span class="cleanslate TridactylStatusIndicator  TridactylModenormal ">normal</span>&nbsp;<br>
+    
+
+</body><iframe class="cleanslate hidden" src="%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5_files/commandline.html" id="cmdline_iframe" loading="lazy" style="height: 0px !important;"></iframe></html>
